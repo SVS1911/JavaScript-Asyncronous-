@@ -79,6 +79,78 @@
 
 
 
+// function asyncFunction1(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("Data1");
+//             res("Success");
+//         }, 6000);
+//     })
+// }
+
+// function asyncFunction2(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("Data2");
+//             res("Success");
+//         }, 6000);
+//     })
+// }
+
+
+// console.log("Fetching Data1")
+// asyncFunction1()
+// .then((res)=>{
+//     console.log(res);
+//     asyncFunction2().then((res)=>{
+//         console.log(res);
+//     })
+// })
+
+
+
+// let data=[1,2,3,4,5,6,7,8,9,0];
+// function getData(dataId){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//         console.log("Data: ",dataId);
+//         res("success")
+//         },2000);
+//     });
+// }
+// getData(1)
+//     .then(res=>{
+//         return getData(2);
+//     })
+//     .then((res)=>{
+//         return getData(3);
+//     })
+//     .then((res)=>{
+//     console.log(`Final Stayus:====${res}====`)
+//     })
+
+
+
+// async function hello(){
+//     console.log("Hellow");
+// }
+
+
+// function api(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("Weather Data");
+//             res(200);
+//         },2000);
+//     });
+// }
+
+// async function getWeatherData() {
+
+//     await api();
+//     await api();
+
+// }
 
 
 
@@ -86,64 +158,31 @@
 
 
 
-
-function asyncFunction1(){
+let data=[1,2,3,4,5,6,7,8,9,0];
+function getData(dataId){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
-            console.log("Data1");
-            res("Success");
-        }, 6000);
-    })
-}
-
-function asyncFunction2(){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            console.log("Data2");
-            res("Success");
-        }, 6000);
-    })
+        console.log("Data: ",dataId);
+        res("success")
+        },2000);
+    });
 }
 
 
-console.log("Fetching Data1")
-let p1=asyncFunction1();
-p1.then((res)=>{
-    console.log(res);
-})
-
-console.log("Fetching Data2")
-let p2=asyncFunction2();
-p2.then((res)=>{
-    console.log(res);
-})
 
 
+//ASYNC/AWAIT:::
 
+async function getAllData(){
+    console.log("Getting all the Data......")
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+    await getData(6);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
