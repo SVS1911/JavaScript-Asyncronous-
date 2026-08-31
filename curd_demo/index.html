@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="fo" action="">
+            <button id="one" type="button" >view</button>
+            <button id="two" type="button">create</button>
+            <button id="three" type="button">delete</button>
+            <button id="four" type="button">update</button>
+        </form>
+    </div>
+
+    <script>
+        var one=document.getElementById('one')
+        var two=document.getElementById('two')
+        var three=document.getElementById('three')
+        var four=document.getElementById('four')
+
+        function view() {
+            let response = fetch(API_ENDPOINT)    
+            return response;
+        }
+
+        one.addEventListener("click",(e)=>{
+            e.preventDefault()
+            view().then((response)=>{
+                return response.json();
+            }).then((data)=>{
+                console.log(data);
+            })
+            .catch((error)=>{
+                console.log("Error");
+            })
+        })
+
+        function create() {
+            let headers = {
+                "Content-Type": "application/json"
+            };
+
+            let data = {
+                "name": "charan",
+                "email": "charan@gmail.com",
+                "designation": "HR"
+            };
+
+            return fetch(API_ENDPOINT, {
+                headers: headers,
+                method: "POST",
+                body: JSON.stringify(data)
+            })
+            .then((response) => {
+                if (response.ok) return response;
+                else throw new Error("ERROR");
+            });
+        }
+
+        two.addEventListener("click", (e) => {
+            e.preventDefault();
+            create()
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    alert("Employee ADDED"); 
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        });
+
+        
+        function delet() {
+            
+        }
+
+        function edit() {
+            // update logic here
+        }
+
+        const API_ENDPOINT = `http://localhost:3000/employees`
+    </script>
+</body>
+</html>

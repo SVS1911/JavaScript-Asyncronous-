@@ -1,0 +1,77 @@
+{
+  "employees": [
+    {
+      "name": "SVSG",
+      "email": "svsg@gmail.com",
+      "designation": "AI Engineer",
+      "id": "WVSCldX217s"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "TAeQdz2rfhg"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "7tAfgt47Ktg"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "QjmfsdyVDE8"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "8_HBk7x9rrU"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "J4QgFNhl9_E"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "qth060XqcH4"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "YRYvhAQgO5A"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "SMM47tkGgDw"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "dBEDAP1pXgU"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "YSlasFu3bMY"
+    },
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "designation": "HR",
+      "id": "H7X607Fmhb0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
