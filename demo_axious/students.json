@@ -1,0 +1,68 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "email": "rahul@gmail.com",
+      "phone": "9876543210",
+      "course": "JavaScript",
+      "age": 21
+    },
+    {
+      "id": 2,
+      "name": "Priya Singh",
+      "email": "priya@gmail.com",
+      "phone": "9876543211",
+      "course": "React",
+      "age": 22
+    },
+    {
+      "id": 3,
+      "name": "Aman Kumar",
+      "email": "aman@gmail.com",
+      "phone": "9876543212",
+      "course": "Angular",
+      "age": 20
+    },
+    {
+      "id": 4,
+      "name": "Neha Verma",
+      "email": "neha@gmail.com",
+      "phone": "9876543213",
+      "course": "Python",
+      "age": 23
+    },
+    {
+      "id": 5,
+      "name": "Rohit Gupta",
+      "email": "rohit@gmail.com",
+      "phone": "9876543214",
+      "course": "Node.js",
+      "age": 21
+    },
+    {
+      "id": 6,
+      "name": "Anjali Patel",
+      "email": "anjali@gmail.com",
+      "phone": "9876543215",
+      "course": "Java",
+      "age": 22
+    },
+    {
+      "id": 7,
+      "name": "Vikas Yadav",
+      "email": "vikas@gmail.com",
+      "phone": "9876543216",
+      "course": "Spring Boot",
+      "age": 24
+    },
+    {
+      "id": 8,
+      "name": "Sneha Reddy",
+      "email": "sneha@gmail.com",
+      "phone": "9876543217",
+      "course": "HTML & CSS",
+      "age": 20
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <button id="view_bt">View_data</button>
+
+    <script>
+        const url="http://localhost:3000/students"
+
+        async function getFData(){
+            let response=await axios.get(url)
+            return response.data;
+        }
+
+        let view_bt=document.getElementById("view_bt")
+        view_bt.addEventListener("click", async ()=>{
+            let data=await getFData()
+            console.log(data);
+        })
+
+        async function addData(){
+            let data=prompt("Enter the Data");
+            
+        }
+
+    </script>
+    
+</body>
+</html>
